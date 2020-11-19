@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Contact Us </title>
+
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+  <!-- FONT AWESOME CDN LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- GOOGLE FONT CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="assets/img/rooms/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+
+<body>
+  <!-- HEADER SECTION -->
+  <header class="header">
+    <nav class="header__nav">
+      <h4 class="hng-logo">HNG</h4>
+      <span class="hamburger">
+        <i class="fa fa-bars open-nav" aria-hidden="true"></i>
+        <i class="fa fa-close close-nav" aria-hidden="true"></i>
+      </span>
+      <ul class="header__nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="rooms.html">ROOMS</a></li>
+        <li><a href="facilities.html">FACILITIES</a></li>
+        <li><a href="#" class="active-link">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <h1>Contact Us</h1>
+  </header>
+
+  <!-- Send Message -->
+  <section id="contact-us">
+    <div class="info-left">
+      <h1 class=header-title>SEND US A <span class="bold">MESSAGE</span></h1>
+      <hr>
+      <p class="text">Kindly fill out the form</p>
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" id="" placeholder="Add Name">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="" placeholder="Add Email">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="" placeholder="Phone Number">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="" placeholder="Add Message"></textarea>
+        </div>
+        <input type="submit" value="SEND" class="btn btn-primary">
+      </form>
+    </div>
+
+    <!-- Address -->
+    <div class="info-right">
+      <h1 class="header-title">OUR <span class="bold">ADDRESS</span></h1>
+      <hr>
+      <h5 class="text">You can find us at:</h5>
+      <p class="p bold">
+        30b, Owonikoko Street, <br>
+        Off Richman Junction,<br>Ikeja Lagos- Nigeria.
+      </p>
+      <div class="info-details">
+        <h5 class="text info-head">Phone Number</h5>
+        <p class="p bold">09087887649<br>07065990587</p>
+      </div>
+      <div class="info-details">
+        <h5 class="text info-head">Email Address</h5>
+        <p class="p bold">hello@hng.com.ng</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- map section -->
+  <section class="map-container">
+    <div id="map"></div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <h4 class="hng-logo">HNG</h4>
+    <nav class="footer__nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="rooms.html" class="current">ROOMS</a></li>
+        <li><a href="facilities.html">FACILITIES</a></li>
+        <li><a href="#" class="active-link">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <div class="footer__social">
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-youtube" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="footer__copyright">
+      <small>&copy; Copyright - HNG Hotels | Designed by DamiflexSolution</small>
+    </div>
+  </footer>
+
+  <!-- map script -->
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: -34.397, lng: 150.644 }, zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH3k7sqj7OqdV_zDynOShg5TQu55_rI-s&callback=initMap"
+    async defer></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/hamburger.js"></script>
+</body>
+
+</html>
